@@ -14,8 +14,7 @@ const usersSchema= new Schema({
     required:true
   },
   type:{
-    type:string,
-    
+    type:string
     required:true
   }
 })
