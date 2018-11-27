@@ -5,20 +5,23 @@ const Schema=mongoose.Schema;
 const usersSchema= new Schema({
 
   username:{
-    type:string,
+    type:String,
     unique:true,
     required:true
   },
   password:{
-    type:string,
+    type:String,
     required:true
   },
   type:{
-    type:string,
-    
-    
+    type:String,
     required:true
-  }
+  },
+  header:String,
+  post:String,
+  info:String,
+  salary:String,
+  company:String
 })
 const Users=mongoose.model('Users',usersSchema);
 
